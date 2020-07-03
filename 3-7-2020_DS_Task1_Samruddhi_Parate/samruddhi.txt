@@ -1,0 +1,115 @@
+#include <stdio.h>
+struct student {
+    int student_id;
+    char student_name;
+    int student_year;
+    float student_CGPA;
+    
+} 
+
+int main() {
+    
+    struct student std1;
+    struct student std2;
+    struct student std3;
+    struct student std4;
+    
+
+     printf("\n Enter the student1 record:");
+     printf("\n\n Enter student id:");
+     scanf("d",&std1.student_id);
+     printf("\n\n Enter student name:");
+     scanf("s",&std1.student_name);
+     printf("\n\n Enter student id:");
+     scanf("d",&std1.student_id);
+     printf("\n\n Enter student year:");
+     scanf("d",&std1.student_year);
+     printf("\n\n Enter student CGPA:");
+     scanf("f",&std1.student_CGPA);
+
+
+
+     printf("\n Enter the student1 record:");
+     printf("\n\n Enter student id:");
+     scanf("d",&std1.student_id);
+     printf("\n\n Enter student name:");
+     scanf("s",&std1.student_name);
+     printf("\n\n Enter student id:");
+     scanf("d",&std1.student_id);
+     printf("\n\n Enter student year:");
+     scanf("d",&std1.student_year);
+     printf("\n\n Enter student CGPA:");
+     scanf("f",&std1.student_CGPA);
+
+
+
+     printf("\n Enter the student2 record:");
+     printf("\n\n Enter student id:");
+     scanf("d",&std2.student_id);
+     printf("\n\n Enter student name:");
+     scanf("s",&std2.student_name);
+     printf("\n\n Enter student id:");
+     scanf("d",&std2.student_id);
+     printf("\n\n Enter student year:");
+     scanf("d",&std2.student_year);
+     printf("\n\n Enter student CGPA:");
+     scanf("f",&std2.student_CGPA);
+
+
+
+      printf("\n Enter the student3 record:");
+     printf("\n\n Enter student id:");
+     scanf("d",&std3.student_id);
+     printf("\n\n Enter student name:");
+     scanf("s",&std3.student_name);
+     printf("\n\n Enter student id:");
+     scanf("d",&std3.student_id);
+     printf("\n\n Enter student year:");
+     scanf("d",&std3.student_year);
+     printf("\n\n Enter student CGPA:");
+     scanf("f",&std3.student_CGPA);
+
+
+      printf("\n Enter the student4 record:");
+     printf("\n\n Enter student id:");
+     scanf("d",&std4.student_id);
+     printf("\n\n Enter student name:");
+     scanf("s",&std4.student_name);
+     printf("\n\n Enter student id:");
+     scanf("d",&std4.student_id);
+     printf("\n\n Enter student year:");
+     scanf("d",&std4.student_year);
+     printf("\n\n Enter student CGPA:");
+     scanf("f",&std4.student_CGPA);
+
+     printf("\n\nStudent-1 record-");
+     printf("\n\n id of the student is %d",std1.student_id);
+     printf("\n\n Name of the student is %s",std1.student_name);
+     printf("\n\n Year is:%d", std1.student_year);
+     printf("\n\n CGPA is:%f",std1.student_CGPA);
+
+      printf("\n\nStudent-2 record-");
+     printf("\n\n id of the student is %d",std2.student_id);
+     printf("\n\n Name of the student is %s",std2.student_name);
+     printf("\n\n Year is:%d", std2.student_year);
+     printf("\n\n CGPA is:%f",std2.student_CGPA);
+
+     printf("\n\nStudent-3 record-");
+     printf("\n\n id of the student is %d",std3.student_id);
+     printf("\n\n Name of the student is %s",std3.student_name);
+     printf("\n\n Year is:%d", std3.student_year);
+     printf("\n\n CGPA is:%f",std3.student_CGPA);
+
+      printf("\n\nStudent-4 record-");
+     printf("\n\n id of the student is %d",std4.student_id);
+     printf("\n\n Name of the student is %s",std4.student_name);
+     printf("\n\n Year is:%d", std4.student_year);
+     printf("\n\n CGPA is:%f",std4.student_CGPA);
+
+
+
+
+
+
+
+     
