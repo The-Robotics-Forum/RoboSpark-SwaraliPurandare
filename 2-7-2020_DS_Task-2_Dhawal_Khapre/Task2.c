@@ -2,13 +2,13 @@
 
 int push(int *stack, int top)
 {
-    top++;
+    ++top;
     return top;
 }
 
 int pop(int *stack, int top)
 {
-    top--;
+    --top;
     return top;
 }
 
@@ -19,24 +19,27 @@ int main()
     char x;
     int count;
     int count2;
+    int final;
 
-    x = '(';
+    x = 'a';
 
-    while (x == '(' || x == ')')
+    while (x != 'z')
     {
-        scanf("%s", &x);
+        scanf("%c", &x);
 
         if (x == '(')
         {
-           count = push(stack, top);
+            top = push(stack , top);
         }
-        else
+        else if (x == ')')
         {
-            count2 = pop(stack, top);
+            top = pop(stack, top);
         }
     }
 
-    if (count == count2)
+    final = count - count2;
+
+    if (top == -1)
     {
         printf("\nBrackets are equal!");
     }
