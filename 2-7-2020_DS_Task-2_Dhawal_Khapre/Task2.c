@@ -17,9 +17,6 @@ int main()
     int stack[100];
     int top = -1;
     char x;
-    int count;
-    int count2;
-    int final;
 
     x = 'a';
 
@@ -36,8 +33,6 @@ int main()
             top = pop(stack, top);
         }
     }
-
-    final = count - count2;
 
     if (top == -1)
     {
