@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+struct Student {
+	char* name;
+	int id;
+	int year;
+	double CGPA;
+};
+
+
+int main()
+{
+	int i = 0, n = 4;
+
+
+	struct Student student[n];
+
+
+	student[0].id = 1;
+	student[0].name = "STUDENT 1";
+	student[0].year = 2012;
+	student[0].CGPA = 8.5;
+
+	student[1].id = 2;
+	student[1].name = "STUDENT 2";
+	student[1].year = 2010;
+	student[1].CGPA = 6.84;
+
+	student[2].id = 3;
+	student[2].name = "STUDENT 3";
+	student[2].year = 2011;
+	student[2].CGPA = 7.94;
+
+	student[3].id= 4;
+	student[3].name = "STUDENT 4";
+	student[3].year = 2012;
+	student[3].CGPA = 8.78;
+
+
+
+
+	printf("Student Records:\n\n");
+	for (i = 0; i < n; i++) {
+		printf("\tName = %s\n", student[i].name);
+		printf("\tId = %d\n", student[i].id);
+		printf("\tYear = %d\n", student[i].year);
+		printf("\tCGPA = %0.2f\n\n", student[i].CGPA);
+	}
+
+	return 0;
+}

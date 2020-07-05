@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define MAX 50
+
+
+char queue[MAX];
+int rear=-1;
+int front=-1;
+
+struct student{ char  name;
+                int roll;
+};
+
+int main()
+{
+    struct student s[10];
+    int i;
+    printf("Enter information of students:");
+    for(i=0;i<5;i++)
+    {
+        printf("Enter name");
+        scanf("%s",&s[i].name);
+        printf("Enter roll no.");
+        scanf("%d",&s[i].roll);
+    }
+    evenroll(s[10]);
+    return 0;
+}
+
+void evenroll(struct student s[10])
+{
+    int i;
+    char ch[50];
+    for(i=0;i<5;i++)
+    {
+        if((s[i].roll )%2==0)
+        {
+           ch[50]=s[i].name;
+           insert(ch[50]);
+        }
+    }
+    display();
+};
+
+void insert(char ch[50])
+{
+    if(rear==MAX-1)
+        printf("Queue overflowed");
+    else{
+        if(front==-1)
+            front=0;
+        rear=rear+1;
+        queue[rear]=ch;
+    }
+};
+
+void display()
+{
+    int i=0;
+    if(front==-1)
+        printf("Queue overflowed");
+    else{
+        for(i=front;i<=rear;i++)
+            printf("%s",queue[i]);
+    }
+};
+
