@@ -11,6 +11,7 @@ using namespace std;
      float cgpa;
      int year;
      float *m = new float[5];
+     int sum = 0;
 
     Student()
     {
@@ -21,7 +22,6 @@ using namespace std;
 
     void calcCGPA()
     {
-        int sum = 0;
         for (int i = 0; i < 5; i++)
             sum = sum + m[i];
         cgpa = (float(sum) / 500) * 10;
@@ -38,14 +38,14 @@ using namespace std;
         cin >> year;
 
         for (int i = 0; i < 5; i++){
-            cout << "Enter marks of sub "<<i+1;
+            cout << "Enter marks of sub "<<i+1<<endl;
             cin >> m[i];
         }
     }
 
     void showData(){
         calcCGPA();
-        cout << "\nDetails are:\nRoll no :" << roll << "\nName :" << name << "\nYear :" << year << "\nCGPA :" << cgpa;
+        cout << "\nDetails are:\nRoll no :" << roll << "\nName :" << name << "\nYear :" << year << "\nTotal Marks: " << sum << "\nCGPA :" << cgpa;
     }
  };
 
