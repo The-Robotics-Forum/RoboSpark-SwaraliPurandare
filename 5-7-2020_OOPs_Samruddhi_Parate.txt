@@ -1,0 +1,36 @@
+#include<iostream>
+#include<string.>
+
+using namespace std;
+
+class User_string{
+
+private:
+    char str[30];
+public:
+
+    void getdata();
+    void display();
+    void operator==(User_string str1);
+    void operator=(User_string str1);
+    void operator+(User_string str1);
+    void operator<<(User_string str1);
+    void operator>>(User_string str1);
+
+
+    User_string operator* (int n)
+
+     {
+           User_string c;
+           char a[50]="";
+           strcpy(a, this->str);
+           for (int i = 0; i< n-1; i++)
+           {
+               strcat(a, this->str);
+
+           }
+           cout<< "\n String multiplication is :" <<a <<endl;
+
+     }
+
+};
