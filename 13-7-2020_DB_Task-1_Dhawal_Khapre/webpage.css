@@ -1,0 +1,35 @@
+body{
+    background-image: url(tech.jpg);
+}
+
+#input-box{
+    border: none;
+    background: none;
+    border-bottom: gray;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.inp-box{
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+.button{
+    position: absolute;
+    padding: 12px;
+    margin-left: 70px;
+    background: none;
+    border: none;
+}
+
+::placeholder{
+    color: gray;
+}
