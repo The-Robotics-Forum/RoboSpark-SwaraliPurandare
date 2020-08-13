@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(beige.jpg);
+    background-size: cover;
+    align-self: center;
+}
+
+div{
+    color: black;
+}
+
+.about{
+    text-align: center;
+    
+}
+
+.image{
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.lang{
+    margin-left: 20px;
+}
+
+.pr{
+    margin-left: 20px;
+}
+
+.contact{
+    float: right;
+    text-align: left;
+    padding: 10px;
+    color: black;
+}
+
+a{
+    color: black;
+}
